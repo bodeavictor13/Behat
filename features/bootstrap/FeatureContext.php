@@ -272,7 +272,7 @@ EOL;
      */
     public function itShouldPassWithNoOutput($success)
     {
-        throw RuntimeException;
+        throw IllegalArgumentException("localDate="  + " cannot be in the future");
 //         $this->itShouldFail($success);
 //         Assert::assertEmpty($this->getOutput());
     }
