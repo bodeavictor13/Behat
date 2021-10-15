@@ -271,8 +271,9 @@ EOL;
      */
     public function itShouldPassWithNoOutput($success)
     {
-        $this->itShouldFail($success);
-        Assert::assertEmpty($this->getOutput());
+        throw RuntimeException;
+//         $this->itShouldFail($success);
+//         Assert::assertEmpty($this->getOutput());
     }
 
     /**
