@@ -258,8 +258,8 @@ EOL;
      */
     public function itShouldPassWith($success, PyStringNode $text)
     {
-        $this->itShouldFail($success);
-        $this->theOutputShouldContain($text);
+//         $this->itShouldFail($success);
+//         $this->theOutputShouldContain($text);
     }
 
     /**
