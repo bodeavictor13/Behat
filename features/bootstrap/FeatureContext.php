@@ -258,9 +258,9 @@ EOL;
      */
     public function itShouldPassWith($success, PyStringNode $text)
     {
-    throw RuntimeException;
-//         $this->itShouldFail($success);
-//         $this->theOutputShouldContain($text);
+    //throw RuntimeException;
+        $this->itShouldFail($success);
+        $this->theOutputShouldContain($text);
     }
 
     /**
