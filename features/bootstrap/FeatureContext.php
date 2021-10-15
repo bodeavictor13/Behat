@@ -91,8 +91,8 @@ class FeatureContext implements Context
      */
     public function aFileNamedWith($filename, PyStringNode $content)
     {
-//         $content = strtr((string) $content, array("'''" => '"""'));
-//         $this->createFile($this->workingDir . '/' . $filename, $content);
+        $content = strtr((string) $content, array("'''" => '"""'));
+        $this->createFile($this->workingDir . '/' . $filename, $content);
     }
 
     /**
@@ -258,8 +258,9 @@ EOL;
      */
     public function itShouldPassWith($success, PyStringNode $text)
     {
-        $this->itShouldFail($success);
-        $this->theOutputShouldContain($text);
+    throw RuntimeException;
+//         $this->itShouldFail($success);
+//         $this->theOutputShouldContain($text);
     }
 
     /**
