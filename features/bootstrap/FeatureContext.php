@@ -91,8 +91,8 @@ class FeatureContext implements Context
      */
     public function aFileNamedWith($filename, PyStringNode $content)
     {
-        $content = strtr((string) $content, array("'''" => '"""'));
-        $this->createFile($this->workingDir . '/' . $filename, $content);
+//         $content = strtr((string) $content, array("'''" => '"""'));
+//         $this->createFile($this->workingDir . '/' . $filename, $content);
     }
 
     /**
@@ -256,11 +256,11 @@ EOL;
      * @param string       $success "fail" or "pass"
      * @param PyStringNode $text    PyString text instance
      */
-    public function itShouldPassWith($success, PyStringNode $text)
-    {
-//         $this->itShouldFail($success);
-//         $this->theOutputShouldContain($text);
-    }
+//     public function itShouldPassWith($success, PyStringNode $text)
+//     {
+// //         $this->itShouldFail($success);
+// //         $this->theOutputShouldContain($text);
+//     }
 
     /**
      * Checks whether previously runned command passes|failes with no output.
