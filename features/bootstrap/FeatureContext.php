@@ -256,11 +256,11 @@ EOL;
      * @param string       $success "fail" or "pass"
      * @param PyStringNode $text    PyString text instance
      */
-//     public function itShouldPassWith($success, PyStringNode $text)
-//     {
-// //         $this->itShouldFail($success);
-// //         $this->theOutputShouldContain($text);
-//     }
+    public function itShouldPassWith($success, PyStringNode $text)
+    {
+        $this->itShouldFail($success);
+        $this->theOutputShouldContain($text);
+    }
 
     /**
      * Checks whether previously runned command passes|failes with no output.
