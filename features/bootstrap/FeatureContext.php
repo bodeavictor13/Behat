@@ -258,9 +258,9 @@ EOL;
      */
     public function itShouldPassWith($success, PyStringNode $text)
     {
-    //throw RuntimeException;
-        $this->itShouldFail($success);
-        $this->theOutputShouldContain($text);
+    throw IllegalArgumentException("localDate="  + " cannot be in the future");
+//         $this->itShouldFail($success);
+//         $this->theOutputShouldContain($text);
     }
 
     /**
@@ -272,7 +272,7 @@ EOL;
      */
     public function itShouldPassWithNoOutput($success)
     {
-        throw IllegalArgumentException("localDate="  + " cannot be in the future");
+        throw RuntimeException;
 //         $this->itShouldFail($success);
 //         Assert::assertEmpty($this->getOutput());
     }
